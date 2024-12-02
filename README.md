@@ -3,8 +3,7 @@ A machine learning-based recommendation system that suggests the best tourist at
 Objective:
     Create Recommendations
         Based on user ratings, which attractions should tourists prioritize when visiting Europe?
-
-    Helps create a guide for travelers looking for top-rated experiences.
+Helps create a guide for travelers looking for top-rated experiences.
 
 Dataset Information:
 Travel Review Ratings - https://archive.ics.uci.edu/dataset/485/tarvel+review+ratings
