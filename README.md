@@ -1,9 +1,7 @@
-A machine learning-based recommendation system that suggests the best tourist attractions in Europe based on user ratings, categories, and personal preferences.
+Question: "Which categories are most popular among users with similar preferences?"
 
 Objective:
-    Create Recommendations
-        Based on user ratings, which attractions should tourists prioritize when visiting Europe?
-    (Helps create a guide for travelers looking for top-rated experiences.)
+Group users with similar preferences and identify the most popular categories for each user group.
 
 DATASET INFORMATION:
 
