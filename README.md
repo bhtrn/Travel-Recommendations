@@ -12,9 +12,10 @@ This data set is populated by capturing user ratings from Google reviews. Review
 Renjith, S. (2018). Travel Review Ratings [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5C31Q.
 
 Tools/Libraries Used:
-    - ucimlrepo
-    - pandas
-    - sklearn
+- ucimlrepo
+- pandas
+- sklearn
+- matplotlib
 
 1. Data Collection and Clean Up: (preprocessing.py)
     - extraction of data from UCI ML Repository

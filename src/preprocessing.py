@@ -58,6 +58,11 @@ def check_data_types(df):
     #Uncomment to do data type check of 'features' column
     #print(df['features'].dtypes)
 
+#Save the processed data to a CSV file.
+def save_data(df, file_path):
+    df.to_csv(file_path, index=False)
+
+#main preprocessing function
 def preprocessing():
     df = load_data()
     clean_data(df)
