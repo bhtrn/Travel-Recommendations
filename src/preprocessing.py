@@ -7,15 +7,15 @@ def load_data():
     travel_review_ratings = fetch_ucirepo(id=485)
     return travel_review_ratings.data
 
-#if grabbing data from CSV file
+#If grabbing data from CSV file
 def load_data_csv(data):
     travel_review_ratings = pd.read_csv("Your_file_path")
     return travel_review_ratings
 
 def clean_data(df):
     #Ensure Data types are cleaned
+    drop_null_values(df)
     check_data_types(df)
-    return 0
 
 def standardize_data(df):
     # Step 1: Extract features (assuming df['features'] is a DataFrame)
@@ -58,11 +58,16 @@ def check_data_types(df):
     #Uncomment to do data type check of 'features' column
     #print(df['features'].dtypes)
 
+#Getting rid of Null Values
+def drop_null_values(df):
+    df['features'] = df['features'].dropna()
+
+
 #Save the processed data to a CSV file.
 def save_data(df, file_path):
     df.to_csv(file_path, index=False)
 
-#main preprocessing function
+#Main preprocessing function
 def preprocessing():
     df = load_data()
     clean_data(df)
