@@ -5,8 +5,8 @@ import preprocessing as pp
 import kmeans_clustering as kc
 
 #Saving data to CSV
-def save_to_CSV(cluster_means, file_path):
-    cluster_means.to_csv(file_path, index=True)
+def save_to_CSV(df_data, file_path):
+    df_data.to_csv(file_path, index=True)
 
 if __name__ == '__main__':
     print("Running Travel_Recommendation ML Model")
