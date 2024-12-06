@@ -23,7 +23,13 @@ Tools/Libraries Used:
     - deletion of NaN values (deletion of 2 rows)
     - standardization of data values for all 24 categories of locations
 
-2. K-means Clustering
+2. K-means Clustering: (kmean_clustering.py)
     - elbow method used to find optimal cluster value for accurate model creation (Optimal Value: 77 Clusters)
     - kmeans model fitted with optimal cluster value
+  
+3. Cluster Analysis: (cluster_analysis.py)
+   - analysis of cluster groupings and assignment of cluster to each data entry (user)
+  
+4. User Recommendation Trial: (User Recommendations)
+   - 
 
