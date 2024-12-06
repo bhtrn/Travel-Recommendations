@@ -3,10 +3,6 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 import numpy as np
 
-#Loading saved data if saved onto CSV file
-def load_scaled_data(file_path):
-    return pd.read_csv(file_path)
-
 #Used to determine the optimal number of clusters needed for K-Means model to prevent over/under fitting data
 def cluster_calculator(df):
     inertia = []

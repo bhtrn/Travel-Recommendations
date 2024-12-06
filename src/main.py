@@ -9,6 +9,11 @@ import cluster_analysis as ca
 def save_to_CSV(df_data, file_path):
     df_data.to_csv(file_path, index=True)
 
+#Load the data from
+def load_data_CSV(file_path):
+    return pd.read_csv(file_path)
+
+
 if __name__ == '__main__':
     print("Running Travel_Recommendation ML Model")
 
@@ -28,6 +33,8 @@ if __name__ == '__main__':
     
     df['features']['Cluster'] = clusters
     cluster_analysis = ca.analyze_clusters(df['features'])
+
+
 
     print('Success')
     
