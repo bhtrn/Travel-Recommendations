@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import preprocessing as pp
 import kmeans_clustering as kc
+import cluster_analysis as ca
 
 #Saving data to CSV
 def save_to_CSV(df_data, file_path):
@@ -25,8 +26,8 @@ if __name__ == '__main__':
     """K-means Clustering"""
     kmeans, clusters = kc.fit_kmeans(df['features'], elbow_val)
     
+    df['features']['Cluster'] = clusters
+    cluster_analysis = ca.analyze_clusters(df['features'])
 
-    print(kmeans)
-    print(len(clusters))
     print('Success')
     
