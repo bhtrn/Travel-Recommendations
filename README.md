@@ -42,3 +42,10 @@ Tools/Libraries Used:
 
     Results: Sample user is suggested to visit the following types of places in Europe based on individual scoring of 24 different categoreis of locations
 
+5. Model Evaluation:
+   - using silhouette scoring (sklearn), the model is given a score of 0.43064499435291254
+   - scores between 0.3 to 0.5 are considered moderate, meaning the clusters are fairly grouped together with the possiblity of overlap between clusters. (Due to the nature of real-world datasets, this is an appropriate score)
+   - model is deemed acceptable to be suited for user recommendations based on ranking of categorical locations
+
+Conclusion:
+The model created is suitable to answer the given question: "Which categories are most popular among users with similar preferences?". With this in mind, the model can now be used to give recommendations to new users who wish to determine what categorical locations they should visit in Europe based on their own personal rankings of those categorical locations.
