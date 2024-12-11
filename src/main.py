@@ -64,6 +64,5 @@ if __name__ == '__main__':
     print("Model Score: {}".format(model_score))
     print("Scores >= 0.3 are considered moderate and reliable due to the nature or real-world datasets.\nWe can conclude the model is accurate enough to provide suggestions for new users.")
     print("Step 4: Model Evaluation Complete")
-
     print('Success')
     
