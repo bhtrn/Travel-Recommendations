@@ -22,8 +22,9 @@ def cluster_calculator(df):
     """
     return find_elbow_point(inertia)
 
+#Find elbow point where number of clusters is optimal
 def find_elbow_point(inertia):
-    """Find the elbow point in the inertia curve using the maximum distance method."""
+
     # Coordinates of all points
     x = np.arange(len(inertia))
     y = np.array(inertia)
