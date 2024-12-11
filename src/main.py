@@ -55,6 +55,9 @@ if __name__ == '__main__':
     #Making a recommendation based on user choice
     recommendations = ur.recommend_categories(prediction[0], cluster_analysis)
     print(recommendations)
+    print("Step 3: User Testing Complete")
 
+    """Model Evaluation"""
+    
     print('Success')
     
