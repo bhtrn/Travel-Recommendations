@@ -6,6 +6,7 @@ import kmeans_clustering as kc
 import cluster_analysis as ca
 import user_recommendations as ur
 
+"""Optional functions for saving and loading data to/from CSV files"""
 #Saving data to CSV
 def save_to_CSV(df_data, file_path):
     df_data.to_csv(file_path, index=True)
