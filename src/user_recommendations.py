@@ -19,12 +19,9 @@ def recommend_categories(user_cluster, cluster_means):
 
 # Convert user_ratings to a DataFrame with the feature names
 def convert_to_df(user_ratings):
-    feature_names = [
-    "churches", "resorts", "beaches", "parks", "theatres", "museums", "malls",
-    "zoos", "restaurants", "pubs/bars", "local services", "burger/pizza shops",
-    "hotels/other lodgings", "juice bars", "art galleries", "dance clubs",
-    "swimming pools", "gyms", "bakeries", "beauty & spas", "cafes", 
-    "view points", "monuments", "gardens"]
+    feature_names = ['churches', 'resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoos', 'restaurants',
+                    'pubs/bars', 'local services', 'burger/pizza shops', 'hotels/other lodgings', 'juice bars', 'art galleries', 'dance clubs', 'swimming pools',
+                    'gyms', 'bakeries', 'beauty & spas', 'cafes', 'view points', 'monuments', 'gardens']
 
     # Convert user_ratings to a DataFrame with the feature names
     return pd.DataFrame([user_ratings], columns=feature_names)
