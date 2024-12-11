@@ -34,11 +34,11 @@ Tools/Libraries Used:
    - sample user created for model testing: user_ratings = np.array([4, 3, 5, 3, 2, 4, 5, 1, 4, 3, 5, 4, 4, 3, 2, 1, 5, 4, 2, 5, 3, 2, 4, 3])
    - sample user recommendations returned:
     Cluster 2:
-    malls                 1.110795
-    art galleries         0.851469
-    juice bars            0.785235
-    local services        0.480208
-    burger/pizza shops    0.428190
+    malls                 1.110795;
+    art galleries         0.851469;
+    juice bars            0.785235;
+    local services        0.480208;
+    burger/pizza shops    0.428190;
 
     Results: Sample user is suggested to visit the following types of places in Europe based on individual scoring of 24 different categoreis of locations
 
