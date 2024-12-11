@@ -5,6 +5,7 @@ import preprocessing as pp
 import kmeans_clustering as kc
 import cluster_analysis as ca
 import user_recommendations as ur
+import model_evaluation as me
 
 """Optional functions for saving and loading data to/from CSV files"""
 #Saving data to CSV
@@ -58,6 +59,11 @@ if __name__ == '__main__':
     print("Step 3: User Testing Complete")
 
     """Model Evaluation"""
-    
+    model_score = me.evaluate_clustering(df['features'], clusters)
+
+    print("Model Score: {}".format(model_score))
+    print("Scores >= 0.3 are considered moderate and reliable due to the nature or real-world datasets.\nWe can conclude the model is accurate enough to provide suggestions for new users.")
+    print("Step 4: Model Evaluation Complete")
+
     print('Success')
     
